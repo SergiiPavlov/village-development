@@ -1,0 +1,30 @@
+[
+  {
+    "id": "site-start",
+    "date": "2025-11-08",
+    "title": {
+      "uk": "Стартуємо з сайтом села",
+      "ru": "Стартуем с сайтом села",
+      "en": "Kicking off the village website"
+    },
+    "excerpt": {
+      "uk": "Почали з багатомовного каркасу та базових сторінок.",
+      "ru": "Начали с многозначного каркаса и базовых страниц.",
+      "en": "Started with a multilingual skeleton and base pages."
+    }
+  },
+  {
+    "id": "photo-call",
+    "date": "2025-11-10",
+    "title": {
+      "uk": "Шукаємо фото з історії села",
+      "ru": "Ищем фото из истории села",
+      "en": "Seeking historic village photos"
+    },
+    "excerpt": {
+      "uk": "Якщо маєте родинні архиви — діліться, ми додамо до галереї.",
+      "ru": "Если у вас есть семейные архивы — делитесь, добавим в галерею.",
+      "en": "Have family archives? Share them; we'll add to the gallery."
+    }
+  }
+]

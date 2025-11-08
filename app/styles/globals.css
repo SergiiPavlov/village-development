@@ -37,3 +37,16 @@ a:hover{text-decoration:underline}
 /* FULL-VIEWPORT mobile sheet rendered in a portal to <body> */
 .mobile-sheet{ position:fixed; left:0; top:0; width:100vw; height:100vh; z-index:100; 
   background-color: var(--bg); display:flex; flex-direction:column; padding: 1.5rem; }
+
+
+/* Sticky header shadow when scrolled */
+.header-scrolled{ box-shadow: 0 4px 10px rgba(0,0,0,.06); }
+
+/* Mobile overlay + panel (Drawer) */
+.mobile-overlay{ position: fixed; inset: 0; background: var(--bg); opacity: 1; z-index: 99; }
+.mobile-panel{ position: fixed; top: 0; right: 0; height: 100vh; width: min(92vw, 420px); background: var(--bg); z-index: 100; padding: 1.5rem; display: flex; flex-direction: column; border-left: 1px solid var(--card-border); }
+@media (max-width: 420px){ .mobile-panel{ width: 100vw; } }
+
+/* Slide-in animation */
+@keyframes slideIn{ from{ transform: translateX(12%); opacity: .8 } to{ transform: translateX(0); opacity: 1 } }
+.slide-in{ animation: slideIn .18s ease-out; }
