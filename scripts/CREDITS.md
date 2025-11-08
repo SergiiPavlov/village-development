@@ -8,3 +8,6 @@
 - Volunteers cleaning up the grounds of the park — Public Domain (US NPS). Оригинал: https://commons.wikimedia.org/wiki/File:Volunteers_cleaning_up_the_grounds_of_the_park._(9878f75d-1dd8-b71b-0b02-711f0d856e60).JPG
 
 Скрипты `scripts/fetch_photos.sh` и `scripts/fetch_photos.ps1` скачивают эти файлы в `public/photos/...` с нужными именами.
+
+
+Updated raw URLs for Donets / Ruda Krynytsia / Forest (Nov 8, 2025).

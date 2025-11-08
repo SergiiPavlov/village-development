@@ -55,5 +55,15 @@
   },
   "footer": {
     "rights": "© {year} Zadonetske. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "badge": "Official microsite",
+      "title": "Zadonetske",
+      "subtitle": "River, forests and the history of Slobozhanshchyna",
+      "ctaMore": "Learn more",
+      "ctaVisit": "Plan a visit",
+      "alt": "Siverskyi Donets River in Zadonetske"
+    }
   }
 }
