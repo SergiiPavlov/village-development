@@ -1,0 +1,1 @@
+export default function EventsPage(){return(<div className="py-8"><h1 className="text-3xl font-bold mb-2">Events</h1><p>Скоро тут буде контент із CMS.</p></div>)}

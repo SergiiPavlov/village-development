@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "title": "Zadonetske — village website",
+    "description": "Modern ethno website: history, news, events, places."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "places": "Places",
+    "events": "Events",
+    "news": "News",
+    "gallery": "Gallery",
+    "contacts": "Contacts"
+  },
+  "hero": {
+    "title": "Zadonetske",
+    "subtitle": "River, forests and Slobozhanshchyna heritage",
+    "ctaExplore": "Explore",
+    "ctaVisit": "Plan a visit",
+    "badge": "Official village website"
+  },
+  "footer": {
+    "rights": "© {year} Zadonetske. All rights reserved."
+  }
+}

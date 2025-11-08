@@ -1,0 +1,1 @@
+export const locales=['uk','en','ru'] as const;export type Locale=typeof locales[number];export const defaultLocale:Locale='uk';export const isLocale=(l:string):l is Locale=>locales.includes(l as any);
