@@ -1,0 +1,22 @@
+
+# Photo manifest (drop real 16:9 images into public/photos/... keeping file names)
+
+[places covers]
+/photos/places/donets.jpg        ; Siverskyi Donets Riverside
+/photos/places/oak.jpg           ; Oak Grove
+/photos/places/church.jpg        ; Old Church Site
+/photos/places/blue-well.jpg     ; "Blue Well" Spring
+/photos/places/bridge.jpg        ; Suspension Footbridge
+/photos/places/sunflower.jpg     ; Sunflower Field
+/photos/places/hill.jpg          ; Hill Viewpoint
+
+[news covers]
+/photos/news/fair.jpg            ; Village Fair
+/photos/news/trail.jpg           ; Winter Trail
+/photos/news/cleanup.jpg         ; Riverside Cleanup
+/photos/news/heritage.jpg        ; Heritage Day
+
+Rules:
+- Keep aspect ratio 16:9, recommended size 1600×900 (Next.js will generate responsive sizes).
+- File names MUST stay the same. Code and blur map already reference them.
+- Provide sources/licenses in LICENSE-IMAGES.md (added next to this file).

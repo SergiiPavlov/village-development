@@ -43,10 +43,26 @@ a:hover{text-decoration:underline}
 .header-scrolled{ box-shadow: 0 4px 10px rgba(0,0,0,.06); }
 
 /* Mobile overlay + panel (Drawer) */
-.mobile-overlay{ position: fixed; inset: 0; background: var(--bg); opacity: 1; z-index: 99; }
-.mobile-panel{ position: fixed; top: 0; right: 0; height: 100vh; width: min(92vw, 420px); background: var(--bg); z-index: 100; padding: 1.5rem; display: flex; flex-direction: column; border-left: 1px solid var(--card-border); }
-@media (max-width: 420px){ .mobile-panel{ width: 100vw; } }
+.mobile-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:99}
+.mobile-panel{position:fixed;top:0;right:0;height:100vh;width:min(92vw,420px);background:#fff;z-index:100;padding:1.5rem;display:flex;flex-direction:column;border-left:1px solid var(--card-border)}
+@media (max-width: 420px){ .mobile-panel{position:fixed;top:0;right:0;height:100vh;width:min(92vw,420px);background:#fff;z-index:100;padding:1.5rem;display:flex;flex-direction:column;border-left:1px solid var(--card-border)} }
 
 /* Slide-in animation */
 @keyframes slideIn{ from{ transform: translateX(12%); opacity: .8 } to{ transform: translateX(0); opacity: 1 } }
 .slide-in{ animation: slideIn .18s ease-out; }
+
+@media (prefers-color-scheme: dark){.mobile-panel{background:#0b0b0c}}
+
+/* --- Language dropdown styles --- */
+.lang-menu{ background: #fff; }
+@media (prefers-color-scheme: dark){
+  .lang-menu{ background:#0b0b0c; color:#f5f7fa; }
+  .lang-menu a{ color:#f5f7fa; }
+}
+
+/* --- Mobile panel text contrast --- */
+.mobile-panel, .mobile-panel a, .mobile-panel button{ color:#111; }
+@media (prefers-color-scheme: dark){
+  .mobile-panel{ background:#0b0b0c; color:#f5f7fa; }
+  .mobile-panel a, .mobile-panel button{ color:#f5f7fa; }
+}

@@ -1,30 +1,34 @@
 
+import Image from 'next/image'
+import Link from 'next/link'
 import { isLocale, Locale } from '@/lib/i18n/config'
 import { getMessages } from '@/lib/i18n/getMessages'
+import { places } from '@/content/places'
+import { blurs } from '@/content/blurs'
 import { pick } from '@/lib/i18n/pick'
-import type { Place } from '@/types/content'
 
 export const dynamic = 'force-static'
 
 export default async function PlacesPage({ params }: { params: { locale: string } }) {
-  const l: Locale = (isLocale(params.locale) ? params.locale : 'uk') as any
+  const l: Locale = (isLocale(params.locale) ? params.locale : 'uk') as Locale
   const m = await getMessages(l)
-  const t = (k: string) => k.split('.').reduce((a: any, p) => a?.[p], m) ?? k
-  const places = (await import('@/content/places.json')).default as Place[]
 
   return (
-    <div className="py-8">
-      <h1 className="text-3xl font-bold mb-2">{t('pages.places.title')}</h1>
-      <p className="mb-6">{t('pages.places.stub')}</p>
-      <div className="grid md:grid-cols-3 gap-6">
-        {places.map((p) => (
-          <article key={p.id} className="card p-5">
-            <h3 className="font-semibold text-lg mb-1">{pick(p.title, l)}</h3>
-            <p className="opacity-80 mb-2">{pick(p.summary, l)}</p>
-            {p.coords && (<div className="text-xs opacity-60">lat: {p.coords.lat.toFixed(3)}, lng: {p.coords.lng.toFixed(3)}</div>)}
+    <section className="py-10">
+      <h1 className="text-3xl font-bold mb-6">{m?.nav?.places ?? 'Places'}</h1>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {places.map(p => (
+          <article key={p.slug} className="rounded-xl border overflow-hidden hover:shadow-md transition-shadow">
+            <div className="relative aspect-[16/9]">
+              <Image src={p.cover} alt={pick(p.title, l)} fill sizes="(max-width: 1024px) 100vw, 33vw" placeholder="blur" blurDataURL={blurs[p.cover]} />
+            </div>
+            <div className="p-4">
+              <h2 className="text-xl font-semibold mb-1"><Link href={`/${l}/places/${p.slug}`}>{pick(p.title, l)}</Link></h2>
+              <p className="text-sm opacity-80">{pick(p.excerpt, l)}</p>
+            </div>
           </article>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
