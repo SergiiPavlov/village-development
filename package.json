@@ -1,6 +1,6 @@
 {
   "name": "zadonetske-app",
-  "version": "1.4.0",
+  "version": "1.4.7",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,5 +1,29 @@
-:root{--r-base:12px;--r-lg:16px;--bg:#fff;--fg:#1a1a1a;--muted:#6b7280;--accent:#C6A34F;--accent-contrast:#0f172a;--card:#fff;--card-border:#e7e5e4;--hero-overlay:linear-gradient(180deg,rgba(198,163,79,.08),rgba(255,255,255,.92))}
-:root[data-theme="ethno"]{--accent:#C6A34F;--accent-contrast:#0f172a}
-:root[data-theme="river"]{--bg:#f7fafc;--fg:#0f172a;--muted:#475569;--accent:#1E88E5;--accent-contrast:#fff;--card-border:#e2e8f0;--hero-overlay:linear-gradient(180deg,rgba(30,136,229,.06),rgba(247,250,252,.95))}
-:root[data-theme="forest"]{--bg:#f8fbf8;--fg:#0b2c1d;--muted:#335a47;--accent:#2E7D32;--accent-contrast:#fff;--card-border:#dbe7dd;--hero-overlay:linear-gradient(180deg,rgba(46,125,50,.06),rgba(248,251,248,.95))}
-:root[data-theme="minimal"]{--bg:#ffffff;--fg:#0a0a0a;--muted:#6b7280;--accent:#111827;--accent-contrast:#fff;--card-border:#e5e7eb;--hero-overlay:linear-gradient(180deg,rgba(17,24,39,.04),rgba(255,255,255,.95))}
+:root{
+  --r-base:12px;--r-lg:16px;
+  --bg:#fff;--fg:#1a1a1a;--muted:#6b7280;
+  --accent:#C6A34F;--accent-contrast:#0f172a;
+  --card:#fff;--card-border:#e7e5e4;
+  --hero-overlay:linear-gradient(180deg,rgba(198,163,79,.08),rgba(255,255,255,.92));
+  --hero-bg: radial-gradient(75% 120% at 20% 0%, #fff 0%, #f7f4ea 40%, #efe4c8 100%);
+  --theme-anim-ms:300ms;
+}
+:root[data-theme="ethno"]{
+  --accent:#C6A34F;--accent-contrast:#0f172a;
+  --hero-overlay:linear-gradient(180deg,rgba(198,163,79,.06),rgba(255,255,255,.95));
+  --hero-bg: radial-gradient(120% 120% at 10% 0%, #ffffff 0%, #f5efe1 40%, #e5d3a7 100%);
+}
+:root[data-theme="river"]{
+  --bg:#f7fafc;--fg:#0f172a;--muted:#475569;--accent:#1E88E5;--accent-contrast:#fff;--card-border:#e2e8f0;
+  --hero-overlay:linear-gradient(180deg,rgba(30,136,229,.06),rgba(247,250,252,.95));
+  --hero-bg: radial-gradient(120% 120% at 80% 0%, #ffffff 0%, #e6f2ff 40%, #cfe4ff 100%);
+}
+:root[data-theme="forest"]{
+  --bg:#f8fbf8;--fg:#0b2c1d;--muted:#335a47;--accent:#2E7D32;--accent-contrast:#fff;--card-border:#dbe7dd;
+  --hero-overlay:linear-gradient(180deg,rgba(46,125,50,.06),rgba(248,251,248,.95));
+  --hero-bg: radial-gradient(120% 120% at 50% 0%, #ffffff 0%, #e8f5ec 40%, #d2ebdb 100%);
+}
+:root[data-theme="minimal"]{
+  --bg:#ffffff;--fg:#0a0a0a;--muted:#6b7280;--accent:#111827;--accent-contrast:#fff;--card-border:#e5e7eb;
+  --hero-overlay:linear-gradient(180deg,rgba(17,24,39,.04),rgba(255,255,255,.95));
+  --hero-bg: radial-gradient(120% 120% at 50% 0%, #ffffff 0%, #f6f7f9 40%, #e9ecf2 100%);
+}
