@@ -10,7 +10,7 @@ import clsx from 'clsx'
 
 type Labels = { home:string; about:string; places:string; events:string; news:string; gallery:string; contacts:string }
 
-export default function Header({ labels, locale }: { labels: Labels; locale: Locale }) {
+export default function Header({ labels, locale }: { labels: { home:string; about:string; places:string; events:string; news:string; gallery:string; contacts:string }; locale: any }) {
   const pathname = usePathname() || `/${locale}`
   const [scrolled, setScrolled] = useState(false)
 
@@ -43,7 +43,7 @@ export default function Header({ labels, locale }: { labels: Labels; locale: Loc
       <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-4">
         <Link href={`/${locale}`} className="font-bold text-lg no-underline">Zadonetske</Link>
 
-        <nav className="ml-auto hidden md:flex gap-4" aria-label="Primary">
+        <nav className="ml-auto hidden min-[850px]:flex gap-4" aria-label="Primary">
           {item(`/${locale}`, labels.home, '')}
           {item(`/${locale}/about`, labels.about, 'about')}
           {item(`/${locale}/places`, labels.places, 'places')}
@@ -53,7 +53,7 @@ export default function Header({ labels, locale }: { labels: Labels; locale: Loc
           {item(`/${locale}/contacts`, labels.contacts, 'contacts')}
         </nav>
 
-        <div className="ml-auto md:ml-0"><LanguageSwitcher current={locale}/></div>
+        <div className="ml-auto min-[850px]:ml-0"><LanguageSwitcher current={locale}/></div>
         <MobileNav labels={labels} locale={locale}/>
       </div>
     </header>
