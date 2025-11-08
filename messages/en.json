@@ -19,6 +19,40 @@
     "ctaVisit": "Plan a visit",
     "badge": "Official village website"
   },
+  "homeCards": {
+    "newsTitle": "News",
+    "newsText": "News feed will appear once CMS is connected.",
+    "eventsTitle": "Events",
+    "eventsText": "Events calendar is coming soon.",
+    "placesTitle": "Places",
+    "placesText": "Map and points of interest will be added shortly."
+  },
+  "pages": {
+    "about": {
+      "title": "About",
+      "stub": "A story about Zadonetske will appear here."
+    },
+    "places": {
+      "title": "Places",
+      "stub": "Map and list of locations from CMS will appear here."
+    },
+    "events": {
+      "title": "Events",
+      "stub": "Events calendar from CMS will appear here."
+    },
+    "news": {
+      "title": "News",
+      "stub": "News feed from CMS will appear here."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "stub": "Photo gallery is coming soon."
+    },
+    "contacts": {
+      "title": "Contacts",
+      "stub": "Contacts and forms will be here."
+    }
+  },
   "footer": {
     "rights": "© {year} Zadonetske. All rights reserved."
   }
