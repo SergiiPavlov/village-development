@@ -1,0 +1,53 @@
+[
+  {
+    "id": "siverskyi-donets-bank",
+    "title": {
+      "uk": "Бережок Сіверського Дінця",
+      "ru": "Берегок Северского Донца",
+      "en": "Siverskyi Donets Riverside"
+    },
+    "summary": {
+      "uk": "Піщані пляжі, сосни, гарні місця для прогулянок.",
+      "ru": "Песчаные пляжи, сосны, красивые места для прогулок.",
+      "en": "Sandy banks, pines and scenic walking spots."
+    },
+    "coords": {
+      "lat": 49.943,
+      "lng": 36.698
+    }
+  },
+  {
+    "id": "old-church",
+    "title": {
+      "uk": "Стара церква",
+      "ru": "Старая церковь",
+      "en": "Old Church"
+    },
+    "summary": {
+      "uk": "Історична локація; зараз лишилися фундамент і фрагменти.",
+      "ru": "Историческая локация; сейчас остались фундамент и фрагменты.",
+      "en": "Historic spot; the foundation and fragments remain."
+    },
+    "coords": {
+      "lat": 49.948,
+      "lng": 36.709
+    }
+  },
+  {
+    "id": "pine-forest",
+    "title": {
+      "uk": "Сосновий бір",
+      "ru": "Сосновый бор",
+      "en": "Pine Forest"
+    },
+    "summary": {
+      "uk": "Лісові стежки, гриби після дощів, свіже повітря.",
+      "ru": "Лесные тропы, грибы после дождей, свежий воздух.",
+      "en": "Forest trails, mushrooms after rains, fresh air."
+    },
+    "coords": {
+      "lat": 49.951,
+      "lng": 36.69
+    }
+  }
+]
