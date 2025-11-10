@@ -3,6 +3,12 @@ import { getMessages } from '@/lib/i18n/getMessages';
 import Link from 'next/link';
 import Image from 'next/image';
 import HeroXfadeAuto from '@/components/HeroXfadeAuto';
+import AboutTeaser from '@/components/home/AboutTeaser'
+import NewsTeaser from '@/components/home/NewsTeaser'
+import PlacesStrip from '@/components/home/PlacesStrip'
+import GalleryStrip from '@/components/home/GalleryStrip'
+import HowToGetHere from '@/components/home/HowToGetHere'
+import ContributeBanner from '@/components/home/ContributeBanner'
 
 export const dynamic = 'force-static';
 
@@ -20,7 +26,8 @@ export default async function Page({ params }: { params: { locale: string } }) {
   };
 
   return (
-    <section className="relative overflow-hidden rounded-2xl">
+    <>
+<section className="relative overflow-hidden rounded-2xl">
       <div className="relative w-full min-h-[360px] md:min-h-[480px]">
         <HeroXfadeAuto />
         
@@ -57,5 +64,13 @@ export default async function Page({ params }: { params: { locale: string } }) {
         </div>
       </div>
     </section>
-  );
+
+      {/* Home sections */}
+      <AboutTeaser locale={l} t={t} />
+      <NewsTeaser locale={l} t={t} />
+      <PlacesStrip locale={l} t={t} />
+      <GalleryStrip locale={l} t={t} />
+      <HowToGetHere t={t} />
+      <ContributeBanner locale={l} t={t} />
+</>);
 }

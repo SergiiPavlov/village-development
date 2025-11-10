@@ -64,6 +64,34 @@
       "ctaMore": "Learn more",
       "ctaVisit": "Plan a visit",
       "alt": "Siverskyi Donets River in Zadonetske"
+    },
+    "about": {
+      "title": "About the village",
+      "text": "A short intro about the village history and life today.",
+      "cta": "Learn more"
+    },
+    "news": {
+      "title": "Latest news",
+      "all": "All news"
+    },
+    "places": {
+      "title": "Places nearby",
+      "all": "All places"
+    },
+    "gallery": {
+      "title": "Gallery",
+      "all": "All photos"
+    },
+    "getHere": {
+      "title": "How to get here",
+      "byCar": "By car: from Kharkiv via P78, then local road.",
+      "byTrain": "Suburban train to Zmiiv, then bus/taxi.",
+      "season": "Season: best May–September; trails can be slippery in winter."
+    },
+    "contribute": {
+      "title": "Share a story or photo",
+      "text": "We dream of a community digital archive — contact us!",
+      "cta": "Contact us"
     }
   }
 }
