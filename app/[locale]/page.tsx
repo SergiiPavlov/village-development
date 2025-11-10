@@ -2,6 +2,7 @@ import { isLocale, Locale } from '@/lib/i18n/config';
 import { getMessages } from '@/lib/i18n/getMessages';
 import Link from 'next/link';
 import Image from 'next/image';
+import HeroXfadeAuto from '@/components/HeroXfadeAuto';
 
 export const dynamic = 'force-static';
 
@@ -21,8 +22,8 @@ export default async function Page({ params }: { params: { locale: string } }) {
   return (
     <section className="relative overflow-hidden rounded-2xl">
       <div className="relative w-full min-h-[360px] md:min-h-[480px]">
-        <Image
-          src="/hero/hero-river-2400.jpg"
+        <HeroXfadeAuto />
+        
           alt={t('home.hero.alt') || 'Сіверський Донець'}
           fill
           priority
