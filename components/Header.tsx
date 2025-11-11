@@ -40,8 +40,8 @@ export default function Header({ labels, locale }: { labels: { home:string; abou
   )
 
   return (
-    <header className={clsx('header-sticky border-b transition-shadow', scrolled && 'header-scrolled')} role="banner">
-      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-4">
+    <header className={clsx('header-sticky transition-shadow', scrolled && 'header-scrolled')} role="banner">
+      <div className="header-inner mx-auto max-w-6xl px-4 py-3 flex items-center gap-4 rounded-xl">
         <Link href={`/${locale}`} className="font-bold text-lg no-underline"><Image src="/brand/crest-32.png" alt="Герб Задонецьке" width={24} height={24} className="inline-block mr-2 align-[-4px]" /><span>Zadonetske</span></Link>
 
         <nav className="ml-auto hidden min-[850px]:flex gap-4" aria-label="Primary">

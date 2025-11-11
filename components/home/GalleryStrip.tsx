@@ -1,7 +1,20 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const thumbs = Array.from({length: 12}, (_,i)=>`/photos/gallery/g${String(i+1).padStart(2,'0')}.jpg`)
+const thumbs = [
+  "/photos/gallery/g01.jpg",
+  "/photos/gallery/g02.jpg",
+  "/photos/gallery/g03.jpg",
+  "/photos/gallery/g04.jpg",
+  "/photos/gallery/g05.jpg",
+  "/photos/gallery/g06.jpg",
+  "/photos/gallery/g07.jpg",
+  "/photos/gallery/g08.jpg",
+  "/photos/gallery/g09.jpg",
+  "/photos/gallery/g10.jpg",
+  "/photos/gallery/g11.jpg",
+  "/photos/gallery/g12.jpg"
+];
 
 export default function GalleryStrip({ locale, t }: { locale: string, t: (k:string)=>string }) {
   return (

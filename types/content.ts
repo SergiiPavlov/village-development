@@ -25,3 +25,28 @@ export type NewsItem = {
   cover: string
   tags?: string[]
 }
+
+
+export interface EventI18n {
+  title: string;
+  excerpt: string;
+  body?: string;
+  placeName?: string;
+  address?: string;
+}
+
+export interface EventItem {
+  id: string;              // slug/id
+  dateStart: string;       // ISO
+  dateEnd?: string;        // ISO
+  cover: string;           // /photos/... path
+  i18n: {
+    uk: EventI18n;
+    ru: EventI18n;
+    en: EventI18n;
+  };
+  location?: {
+    lat?: number;
+    lng?: number;
+  };
+}

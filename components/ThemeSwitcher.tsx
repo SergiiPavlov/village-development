@@ -17,7 +17,7 @@ export default function ThemeSwitcher(){
     const id = setTimeout(()=>document.documentElement.classList.remove('theme-switching'), 350)
     return ()=>clearTimeout(id)
   },[t])
-  return (<div className="fixed right-3 bottom-3 card px-3 py-2 shadow-lg border hidden sm:block">
+  return (<div className="fixed right-3 bottom-24 card px-3 py-2 shadow-lg border hidden sm:block">
     <div className="text-xs mb-1 opacity-70">Theme</div>
-    <div className="flex gap-2">{THEMES.map(x=><button key={x} onClick={()=>setT(x)} className="btn btn-ghost text-sm" aria-pressed={t===x}>{x}</button>)}</div>
+    <div className="flex flex-col gap-2">{THEMES.map(x=><button key={x} onClick={()=>setT(x)} className="btn btn-ghost text-sm" aria-pressed={t===x}>{x}</button>)}</div>
   </div>)}
