@@ -21,9 +21,9 @@ function mdToHtml(md: string): string {
   return '<p>'+html+'</p>'
 }
 
-export default function ContactsPage({ params }:{ params:{ locale:string }}) {
+export default function GuidePage({ params }:{ params:{ locale:string }}) {
   const l:Locale = (isLocale(params.locale) ? params.locale : 'uk') as Locale
-  const file = path.join(process.cwd(), 'content', 'i18n', l, 'contacts.md')
+  const file = path.join(process.cwd(), 'content', 'i18n', l, 'guide.md')
   const md = fs.readFileSync(file, 'utf-8')
   const html = mdToHtml(md)
   return (

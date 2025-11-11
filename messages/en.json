@@ -92,6 +92,35 @@
       "title": "Share a story or photo",
       "text": "We dream of a community digital archive — contact us!",
       "cta": "Contact us"
+    },
+    "events": {
+      "title": {
+        "uk": "Події",
+        "ru": "События",
+        "en": "Events"
+      }
+    }
+  },
+  "eventsPage": {
+    "title": {
+      "uk": "Події",
+      "ru": "События",
+      "en": "Events"
+    },
+    "back": {
+      "uk": "← До подій",
+      "ru": "← К событиям",
+      "en": "← Back to events"
+    },
+    "addToCalendar": {
+      "uk": "Додати в календар",
+      "ru": "Добавить в календарь",
+      "en": "Add to calendar"
+    },
+    "place": {
+      "uk": "Місце:",
+      "ru": "Место:",
+      "en": "Location:"
     }
   }
 }

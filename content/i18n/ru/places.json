@@ -1,0 +1,99 @@
+[
+  {
+    "slug": "npp-homilshanski-lisy",
+    "type": "park",
+    "title": "Нацпарк «Гомільшанські ліси»",
+    "summary": "Лесостеп долины Сіверського Дінця: сосновые боры, пойменные озёра, прогулочные тропы и места для пикников.",
+    "links": [
+      "https://gomilsha.org.ua/"
+    ],
+    "coords": null
+  },
+  {
+    "slug": "siverskyi-donets",
+    "type": "river",
+    "title": "Река Сіверський Донець",
+    "summary": "Главная водная артерия региона: песчаные пляжи, излучины, места для купания и сплавов (по сезону).",
+    "links": [
+      "https://wownature.in.ua/natsionalnyy-pryrodnyy-park-homilshanski-lisy/"
+    ],
+    "coords": null
+  },
+  {
+    "slug": "kozacha-hora",
+    "type": "viewpoint",
+    "title": "Козача гора (Коропове)",
+    "summary": "Высокая круча над Динцем (~60 м) с панорамами. Рядом — руины Змиёвского козацкого Николаевского монастыря.",
+    "links": [
+      "https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B0_%D0%9A%D0%BE%D0%B7%D0%B0%D1%87%D0%B0",
+      "https://uk.wikipedia.org/wiki/%D0%97%D0%BC%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80"
+    ],
+    "coords": [
+      49.58412,
+      36.35215
+    ]
+  },
+  {
+    "slug": "zmiiv-cossack-monastery-ruins",
+    "type": "ruins",
+    "title": "Руины Змиёвского козацкого Николаевского монастыря",
+    "summary": "Козацкий монастырь XVII–XVIII вв. на Козачій горі; сохранились живописные руины и памятный камень.",
+    "links": [
+      "https://gomilsha.org.ua/location/zmiivskyy-kozachyy-monastyr/"
+    ],
+    "coords": [
+      49.59056,
+      36.34167
+    ]
+  },
+  {
+    "slug": "bile-ozero",
+    "type": "lake",
+    "title": "Біле озеро",
+    "summary": "Пойменное озеро между Задонецьким и Коробовыми хуторами; популярное место купания и отдыха.",
+    "links": [
+      "https://travelforfun.org/uk/2018/krashhi-mistsya-dlya-kupannya-v-harkivskij-oblasti/",
+      "https://wikimapia.org/9512325/uk/%D0%91%D1%96%D0%BB%D0%B5-%D0%BE%D0%B7%D0%B5%D1%80%D0%BE"
+    ],
+    "coords": [
+      49.6147,
+      36.3406
+    ]
+  },
+  {
+    "slug": "kamplytsia-pond",
+    "type": "fishing",
+    "title": "Став Камплица (рыбалка)",
+    "summary": "Комплекс небольших ставок и пойменных заводей; местами допускается платная рыбалка (уточняйте правила на месте).",
+    "links": [
+      "https://rivnefish.com/places/951"
+    ],
+    "coords": null
+  },
+  {
+    "slug": "korobovi-khutory",
+    "type": "locality",
+    "title": "Коробові Хутори (Коропове)",
+    "summary": "Соседнее курортное урочище с базами отдыха и выходами к Донцу; часть «Слободжанской Швейцарии».",
+    "links": [
+      "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%B1%D1%96%D0%B2_%D0%A5%D1%83%D1%82%D1%96%D1%80"
+    ],
+    "coords": [
+      49.59056,
+      36.34167
+    ]
+  },
+  {
+    "slug": "zadonetske-vantage",
+    "type": "viewpoint",
+    "title": "Видовые точки над Донцом у Задонецького",
+    "summary": "Песчаные боры и откосы с видами на излучины Донца; отличные точки для рассвета/заката.",
+    "links": [
+      "https://maps.visicom.ua/i/STL1NWVF8"
+    ],
+    "coords": [
+      49.6407,
+      36.3526
+    ]
+  }
+]

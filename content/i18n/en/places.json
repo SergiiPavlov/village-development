@@ -1,0 +1,99 @@
+[
+  {
+    "slug": "npp-homilshanski-lisy",
+    "type": "park",
+    "title": "Homilshanski Lisy National Park",
+    "summary": "Forest‑steppe of the Siverskyi Donets valley: pine woods, floodplain lakes, walking trails, picnic spots.",
+    "links": [
+      "https://gomilsha.org.ua/"
+    ],
+    "coords": null
+  },
+  {
+    "slug": "siverskyi-donets",
+    "type": "river",
+    "title": "Siverskyi Donets River",
+    "summary": "The region’s main waterway: sandy beaches, meanders, swimming and rafting spots (seasonal).",
+    "links": [
+      "https://wownature.in.ua/natsionalnyy-pryrodnyy-park-homilshanski-lisy/"
+    ],
+    "coords": null
+  },
+  {
+    "slug": "kozacha-hora",
+    "type": "viewpoint",
+    "title": "Kozacha Hora (Koropove)",
+    "summary": "A tall bluff above the Donets (~60 m) with wide views. Nearby — ruins of the Zmiiv Cossack St. Nicholas Monastery.",
+    "links": [
+      "https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D1%80%D0%B0_%D0%9A%D0%BE%D0%B7%D0%B0%D1%87%D0%B0",
+      "https://uk.wikipedia.org/wiki/%D0%97%D0%BC%D1%96%D1%97%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%BC%D0%BE%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80"
+    ],
+    "coords": [
+      49.58412,
+      36.35215
+    ]
+  },
+  {
+    "slug": "zmiiv-cossack-monastery-ruins",
+    "type": "ruins",
+    "title": "Ruins of the Zmiiv Cossack St. Nicholas Monastery",
+    "summary": "A 17th–18th c. Cossack monastery on Kozacha Hora; today only picturesque ruins and a memorial stone remain.",
+    "links": [
+      "https://gomilsha.org.ua/location/zmiivskyy-kozachyy-monastyr/"
+    ],
+    "coords": [
+      49.59056,
+      36.34167
+    ]
+  },
+  {
+    "slug": "bile-ozero",
+    "type": "lake",
+    "title": "Bile Lake",
+    "summary": "A floodplain lake between Zadonetske and Korobovi Khutory; a popular swimming and leisure spot.",
+    "links": [
+      "https://travelforfun.org/uk/2018/krashhi-mistsya-dlya-kupannya-v-harkivskij-oblasti/",
+      "https://wikimapia.org/9512325/uk/%D0%91%D1%96%D0%BB%D0%B5-%D0%BE%D0%B7%D0%B5%D1%80%D0%BE"
+    ],
+    "coords": [
+      49.6147,
+      36.3406
+    ]
+  },
+  {
+    "slug": "kamplytsia-pond",
+    "type": "fishing",
+    "title": "Kamplytsia Pond (fishing)",
+    "summary": "A cluster of small ponds and floodplain inlets; some areas allow paid fishing (check local rules).",
+    "links": [
+      "https://rivnefish.com/places/951"
+    ],
+    "coords": null
+  },
+  {
+    "slug": "korobovi-khutory",
+    "type": "locality",
+    "title": "Korobovi Khutory (Koropove)",
+    "summary": "A nearby resort locality with holiday bases and river access; part of the “Slobozhanska Switzerland” area.",
+    "links": [
+      "https://uk.wikipedia.org/wiki/%D0%9A%D0%BE%D1%80%D0%BE%D0%B1%D1%96%D0%B2_%D0%A5%D1%83%D1%82%D1%96%D1%80"
+    ],
+    "coords": [
+      49.59056,
+      36.34167
+    ]
+  },
+  {
+    "slug": "zadonetske-vantage",
+    "type": "viewpoint",
+    "title": "Viewpoints above the Donets near Zadonetske",
+    "summary": "Sandy pine slopes overlooking river meanders; great for sunrise/sunset.",
+    "links": [
+      "https://maps.visicom.ua/i/STL1NWVF8"
+    ],
+    "coords": [
+      49.6407,
+      36.3526
+    ]
+  }
+]
