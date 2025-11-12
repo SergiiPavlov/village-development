@@ -67,8 +67,8 @@ export default async function RootLayout({ children, params }: { children: React
     <html lang={l} suppressHydrationWarning>
       <body>
         <Header labels={labels} locale={l} />
-        <main className="site-body mx-auto max-w-6xl px-4">{children}</main>
-        <Footer rights={rights} />
+        <main className="site-body mx-auto max-w-6xl px-4 pb-0">{children}</main>
+        <Footer />
         <ThemeSwitcher />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(placeLd) }} />
       </body>

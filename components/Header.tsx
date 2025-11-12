@@ -49,9 +49,7 @@ export default function Header({ labels, locale }: { labels: Labels; locale: any
           {item(`/${locale}/about`, labels.about, 'about')}
           {item(`/${locale}/places`, labels.places, 'places')}
           {item(`/${locale}/map`, (labels as any).map ?? 'Map', 'map')}
-          {item(`/${locale}/routes`, (labels as any).routes ?? 'Routes', 'routes')}
-          {item(`/${locale}/news`, labels.news, 'news')}
-          {item(`/${locale}/gallery`, labels.gallery, 'gallery')}
+          {item(`/${locale}/routes`, (labels as any).routes ?? 'Routes', 'routes')}          {item(`/${locale}/gallery`, labels.gallery, 'gallery')}
           {item(`/${locale}/contacts`, labels.contacts, 'contacts')}
         </nav>
 
