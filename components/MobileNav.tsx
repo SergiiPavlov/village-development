@@ -12,13 +12,14 @@ type Labels = {
   home: string
   about: string
   places: string
-  events: string
+  map: string
+  routes: string
   news: string
   gallery: string
   contacts: string
 }
 
-export default function MobileNav({ labels, locale }: { labels: Labels; locale: Locale }) {
+export default function MobileNav({ labels, locale }: { labels: Labels; locale: any }) {
   const [open, setOpen] = useState(false)
   const closeBtnRef = useRef<HTMLButtonElement | null>(null)
   const panelRef = useRef<HTMLDivElement | null>(null)
@@ -115,7 +116,8 @@ export default function MobileNav({ labels, locale }: { labels: Labels; locale: 
               <NavLink href={`/${locale}`} label={labels.home} slug="" />
               <NavLink href={`/${locale}/about`} label={labels.about} slug="about" />
               <NavLink href={`/${locale}/places`} label={labels.places} slug="places" />
-              <NavLink href={`/${locale}/events`} label={labels.events} slug="events" />
+              <NavLink href={`/${locale}/map`} label={labels.map} slug="map" />
+              <NavLink href={`/${locale}/routes`} label={labels.routes} slug="routes" />
               <NavLink href={`/${locale}/news`} label={labels.news} slug="news" />
               <NavLink href={`/${locale}/gallery`} label={labels.gallery} slug="gallery" />
               <NavLink href={`/${locale}/contacts`} label={labels.contacts} slug="contacts" />

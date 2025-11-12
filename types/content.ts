@@ -12,6 +12,7 @@ export type Place = {
   title: LString
   excerpt: LString
   cover: string
+  link?: string
   lat?: number
   lng?: number
   tags?: string[]

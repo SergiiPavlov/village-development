@@ -27,43 +27,44 @@ export default async function Page({ params }: { params: { locale: string } }) {
 
   return (
     <>
-<section className="relative overflow-hidden rounded-2xl">
-      <div className="relative w-full min-h-[360px] md:min-h-[480px]">
-        <HeroXfadeAuto />
-        
-          alt={t('home.hero.alt') || 'Сіверський Донець'}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/30"
-          aria-hidden
-        />
-        <div className="absolute inset-0 z-10 flex items-center justify-center text-center p-8 md:p-12">
-          <div className="max-w-3xl text-white">
-            <span className="inline-block rounded-full bg-black/25 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide backdrop-blur-sm">
-              {t('home.hero.badge') || 'Офіційний сайт-візитка'}
-            </span>
-            <h1 className="mt-4 text-4xl md:text-5xl font-extrabold drop-shadow">
-              {t('home.hero.title') || 'Задонецьке'}
-            </h1>
-            <p className="mt-3 text-base md:text-lg text-white/90 drop-shadow-sm">
-              {t('home.hero.subtitle') || 'Ріка, ліси та історія Слобожанщини'}
-            </p>
-            <div className="mt-6 md:mt-8 flex flex-wrap gap-3 justify-center">
-              <Link href={`/${l}/about`} className="btn btn-primary">
-                {t('home.hero.ctaMore') || 'Дізнатися більше'}
-              </Link>
-              <Link href={`/${l}/contacts`} className="btn">
-                {t('home.hero.ctaVisit') || 'Спланувати візит'}
-              </Link>
-            </div>
-          </div>
+<section className="-mx-4 relative overflow-hidden rounded-2xl">
+  <div className="relative w-full min-h-[360px] md:min-h-[480px]">
+    <HeroXfadeAuto />
+    <Image
+      src="/photos/places/donets.jpg"
+      alt={t('home.hero.alt') || 'Сіверський Донець'}
+      fill
+      priority
+      sizes="100vw"
+      className="object-cover object-center"
+    />
+    <div
+      className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/5 to-black/30"
+      aria-hidden
+    />
+    <div className="absolute inset-0 z-10 flex items-center justify-center text-center p-8 md:p-12">
+      <div className="max-w-3xl text-white">
+        <span className="inline-block rounded-full bg-black/25 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide backdrop-blur-sm">
+          {t('home.hero.badge') || 'Офіційний сайт-візитка'}
+        </span>
+        <h1 className="mt-4 text-4xl md:text-5xl font-extrabold drop-shadow">
+          {t('home.hero.title') || 'Задонецьке'}
+        </h1>
+        <p className="mt-3 text-base md:text-lg text-white/90 drop-shadow-sm">
+          {t('home.hero.subtitle') || 'Ріка, ліси та історія Слобожанщини'}
+        </p>
+        <div className="mt-6 md:mt-8 flex flex-wrap gap-3 justify-center">
+          <Link href={`/${l}/about`} className="btn btn-primary">
+            {t('home.hero.ctaMore') || 'Дізнатися більше'}
+          </Link>
+          <Link href={`/${l}/contacts`} className="btn">
+            {t('home.hero.ctaVisit') || 'Спланувати візит'}
+          </Link>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
       {/* Home sections */}
       <AboutTeaser locale={l} t={t} />
