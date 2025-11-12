@@ -38,10 +38,13 @@ export default async function RootLayout({ children, params }: { children: React
     home: m?.nav?.home ?? 'Home',
     about: m?.nav?.about ?? 'About',
     places: m?.nav?.places ?? 'Places',
-    events: m?.nav?.events ?? 'Events',
+    map: m?.nav?.map ?? 'Map',
     news: m?.nav?.news ?? 'News',
     gallery: m?.nav?.gallery ?? 'Gallery',
+    routes: m?.nav?.routes ?? 'Routes',
     contacts: m?.nav?.contacts ?? 'Contacts',
+  
+    events: m?.nav?.events ?? 'Events',
   }
 
   const rights = (m?.footer?.rights ?? '© {year} Zadonetske').replace(/\{year\}/g, String(new Date().getFullYear()))

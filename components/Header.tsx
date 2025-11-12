@@ -9,9 +9,9 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import clsx from 'clsx'
 
-type Labels = { home:string; about:string; places:string; events:string; news:string; gallery:string; contacts:string }
+type Labels = { home:string; about:string; places:string; map:string; routes:string; news:string; gallery:string; contacts:string; events?:string }
 
-export default function Header({ labels, locale }: { labels: { home:string; about:string; places:string; events:string; news:string; gallery:string; contacts:string }; locale: any }) {
+export default function Header({ labels, locale }: { labels: Labels; locale: any }) {
   const pathname = usePathname() || `/${locale}`
   const [scrolled, setScrolled] = useState(false)
 
@@ -48,7 +48,8 @@ export default function Header({ labels, locale }: { labels: { home:string; abou
           {item(`/${locale}`, labels.home, '')}
           {item(`/${locale}/about`, labels.about, 'about')}
           {item(`/${locale}/places`, labels.places, 'places')}
-          {item(`/${locale}/events`, labels.events, 'events')}
+          {item(`/${locale}/map`, (labels as any).map ?? 'Map', 'map')}
+          {item(`/${locale}/routes`, (labels as any).routes ?? 'Routes', 'routes')}
           {item(`/${locale}/news`, labels.news, 'news')}
           {item(`/${locale}/gallery`, labels.gallery, 'gallery')}
           {item(`/${locale}/contacts`, labels.contacts, 'contacts')}

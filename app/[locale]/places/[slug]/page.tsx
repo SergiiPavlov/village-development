@@ -1,5 +1,6 @@
 
 import Image from 'next/image'
+import NextDynamic from 'next/dynamic'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { isLocale, Locale } from '@/lib/i18n/config'
@@ -10,6 +11,7 @@ import { blurs } from '@/content/blurs'
 import type { Metadata } from 'next'
 
 export const dynamic = 'force-static'
+const PlaceMiniMap = NextDynamic(() => import('@/components/map/PlaceMiniMap'), { ssr:false })
 
 export async function generateStaticParams() {
   const locales: Locale[] = ['uk','en','ru'] as const
@@ -44,6 +46,24 @@ export default async function PlaceDetails({ params }: { params: { locale: strin
       {typeof place.lat === 'number' && typeof place.lng === 'number' && (
         <p className="mt-3 text-sm opacity-70">GPS: {place.lat}, {place.lng}</p>
       )}
-    </section>
+    
+{/* Mini map + route buttons */}
+{(() => {
+  const anyP = place as any
+  const hasGeo = typeof anyP.lat==='number' && typeof anyP.lng==='number'
+  if (!hasGeo) return null
+  const osm = `https://www.openstreetmap.org/?mlat=${anyP.lat}&mlon=${anyP.lng}#map=15/${anyP.lat}/${anyP.lng}`
+  const gmaps = `https://maps.google.com/?q=${anyP.lat},${anyP.lng}`
+  return (
+    <div className="mt-6 space-y-3">
+      <PlaceMiniMap lat={anyP.lat} lng={anyP.lng} />
+      <div className="flex gap-2">
+        <a href={osm} target="_blank" rel="noopener noreferrer" className="btn btn-sm">OSM</a>
+        <a href={gmaps} target="_blank" rel="noopener noreferrer" className="btn btn-sm">Google</a>
+      </div>
+    </div>
+  )
+})()}
+</section>
   )
 }

@@ -10,7 +10,9 @@
     "events": "Events",
     "news": "News",
     "gallery": "Gallery",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "map": "Map",
+    "routes": "Routes"
   },
   "hero": {
     "title": "Zadonetske",
